@@ -21,3 +21,11 @@ if (email && vehiculo && marcas) {
 } else if (!marcas) {
   alert("ingrese marcas");
 }
+const usuario = {
+  nombre: document.getElementById("NombreYapellido"),
+  email: document.getElementById("email"),
+  numero: document.getElementById("numero"),
+  consulta: document.getElementById("consulta"),
+};
+
+localStorage.setItem("user", JSON.stringify(usuario));
